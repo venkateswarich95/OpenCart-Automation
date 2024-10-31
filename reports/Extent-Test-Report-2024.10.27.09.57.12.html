@@ -1,0 +1,3108 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>opencart Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">opencart Functional Testing</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 27, 2024 09:57:12 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">AllTestSuite</a><a class="dropdown-item" href="#">MyAccountPageTest</a><a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">HomePageTest</a><a class="dropdown-item" href="#">ProductDetailsPageTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="HomePageTest AllTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyOpenCartPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyOpenCartPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">AllTestSuite</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify the opencart page title</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyOpenCartPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:180</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyOpenCartPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:00:180</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyOpenCartPageTitleTest_20241027095719.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyOpenCartPageTitleTest_20241027095719.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:19 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="HomePageTest AllTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyOpenCartLogoTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyOpenCartLogoTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">AllTestSuite</span></div>
+<div class="m-t-10 m-l-5">TC02_Verify the opencart logo Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyOpenCartLogoTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:151</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyOpenCartLogoTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:00:151</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyOpenCartLogoTest_20241027095719.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyOpenCartLogoTest_20241027095719.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:19 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="HomePageTest AllTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyOpenCartFeaturedSectionCardsCountTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyOpenCartFeaturedSectionCardsCountTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">AllTestSuite</span></div>
+<div class="m-t-10 m-l-5">TC03_Verify the opencart featured section cards count Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyOpenCartFeaturedSectionCardsCountTest</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:00:138</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyOpenCartFeaturedSectionCardsCountTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:19 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:20 AM</span>
+<span class='badge badge-default'>00:00:00:138</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyOpenCartFeaturedSectionCardsCountTest_20241027095719.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyOpenCartFeaturedSectionCardsCountTest_20241027095719.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:19 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="HomePageTest AllTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifynavigateToRegistrationPageTest</p>
+            <p class="text-sm">
+              <span>9:57:20 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifynavigateToRegistrationPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:20 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:20 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">AllTestSuite</span></div>
+<div class="m-t-10 m-l-5">TC04_Verify navigate to registration page from home page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifynavigateToRegistrationPageTest</p>
+            <p class="text-sm">
+              <span>9:57:28 AM</span> / <span>00:00:00:265</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifynavigateToRegistrationPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:28 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:28 AM</span>
+<span class='badge badge-default'>00:00:00:265</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifynavigateToRegistrationPageTest_20241027095728.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifynavigateToRegistrationPageTest_20241027095728.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:28 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="HomePageTest AllTestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyNavigateToLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:28 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyNavigateToLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:28 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:28 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">AllTestSuite</span></div>
+<div class="m-t-10 m-l-5">TC05_Verify navigate to login page from home page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyNavigateToLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:36 AM</span> / <span>00:00:00:342</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyNavigateToLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:36 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:36 AM</span>
+<span class='badge badge-default'>00:00:00:342</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyNavigateToLoginPageTest_20241027095736.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyNavigateToLoginPageTest_20241027095736.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:36 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyLoginPageUrlTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyLoginPageUrlTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify the login page url test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyLoginPageUrlTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:145</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyLoginPageUrlTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:145</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyLoginPageUrlTest_20241027095750.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyLoginPageUrlTest_20241027095750.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:50 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyLoginPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyLoginPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC02_Verify the login page title Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyLoginPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:114</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyLoginPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:114</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyLoginPageTitleTest_20241027095750.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyLoginPageTitleTest_20241027095750.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:50 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyLoginPageElementsTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyLoginPageElementsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC03_Verify the login page elements Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyLoginPageElementsTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:111</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyLoginPageElementsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:111</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyLoginPageElementsTest_20241027095750.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyLoginPageElementsTest_20241027095750.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:50 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifyNavigateToRegistrationPageFromLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:50 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifyNavigateToRegistrationPageFromLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:50 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC04_Verify navigate to registration page from login page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifyNavigateToRegistrationPageFromLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:56 AM</span> / <span>00:00:00:144</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifyNavigateToRegistrationPageFromLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:56 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:56 AM</span>
+<span class='badge badge-default'>00:00:00:144</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifyNavigateToRegistrationPageFromLoginPageTest_20241027095756.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifyNavigateToRegistrationPageFromLoginPageTest_20241027095756.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:56 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyNavigateToForgotPasswordFromLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:56 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyNavigateToForgotPasswordFromLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:56 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:56 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC05_Verify navigate to forgot password page from login page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyNavigateToForgotPasswordFromLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:59 AM</span> / <span>00:00:00:157</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyNavigateToForgotPasswordFromLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:59 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:59 AM</span>
+<span class='badge badge-default'>00:00:00:157</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyNavigateToForgotPasswordFromLoginPageTest_20241027095759.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyNavigateToForgotPasswordFromLoginPageTest_20241027095759.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:59 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC06_verifyEmptyCredsLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:57:59 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC06_verifyEmptyCredsLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:57:59 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:57:59 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC06_Verify empty credential login page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC06_verifyEmptyCredsLoginPageTest</p>
+            <p class="text-sm">
+              <span>9:58:09 AM</span> / <span>00:00:00:130</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC06_verifyEmptyCredsLoginPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:09 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:09 AM</span>
+<span class='badge badge-default'>00:00:00:130</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC06_verifyEmptyCredsLoginPageTest_20241027095809.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC06_verifyEmptyCredsLoginPageTest_20241027095809.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:09 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC07_verifyValidCredsLoginTest</p>
+            <p class="text-sm">
+              <span>9:58:09 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC07_verifyValidCredsLoginTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:09 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:09 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC07_Verify valid credential login page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC07_verifyValidCredsLoginTest</p>
+            <p class="text-sm">
+              <span>9:58:18 AM</span> / <span>00:00:00:141</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC07_verifyValidCredsLoginTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:18 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:18 AM</span>
+<span class='badge badge-default'>00:00:00:141</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC07_verifyValidCredsLoginTest_20241027095818.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC07_verifyValidCredsLoginTest_20241027095818.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:18 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="AllTestSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>9:58:18 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:18 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:18 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5">TC08_Verify logout from MyAccount Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>9:58:26 AM</span> / <span>00:00:00:244</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:26 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:26 AM</span>
+<span class='badge badge-default'>00:00:00:244</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_verifyLogoutTest_20241027095826.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_verifyLogoutTest_20241027095826.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:26 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyMyAccountPageUrlTest</p>
+            <p class="text-sm">
+              <span>9:58:45 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyMyAccountPageUrlTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify my account page url test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyMyAccountPageUrlTest</p>
+            <p class="text-sm">
+              <span>9:58:45 AM</span> / <span>00:00:00:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyMyAccountPageUrlTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-default'>00:00:00:131</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyMyAccountPageUrlTest_20241027095845.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyMyAccountPageUrlTest_20241027095845.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:45 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyMyAccountPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:58:45 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyMyAccountPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC02_Verify the My account page title Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02_verifyMyAccountPageTitleTest</p>
+            <p class="text-sm">
+              <span>9:58:45 AM</span> / <span>00:00:00:135</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02_verifyMyAccountPageTitleTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-default'>00:00:00:135</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyMyAccountPageTitleTest_20241027095845.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC02_verifyMyAccountPageTitleTest_20241027095845.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:45 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyMyAccountPageElementsTest</p>
+            <p class="text-sm">
+              <span>9:58:45 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyMyAccountPageElementsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:45 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC03_Verify myAccount page elements Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03_verifyMyAccountPageElementsTest</p>
+            <p class="text-sm">
+              <span>9:58:48 AM</span> / <span>00:00:00:114</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC03_verifyMyAccountPageElementsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:48 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:48 AM</span>
+<span class='badge badge-default'>00:00:00:114</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyMyAccountPageElementsTest_20241027095848.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC03_verifyMyAccountPageElementsTest_20241027095848.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:48 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifyMyAccountMenuOptionsTest</p>
+            <p class="text-sm">
+              <span>9:58:48 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifyMyAccountMenuOptionsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:48 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:48 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC04_Verify MyAccount menu options present or not Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04_verifyMyAccountMenuOptionsTest</p>
+            <p class="text-sm">
+              <span>9:58:50 AM</span> / <span>00:00:00:107</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04_verifyMyAccountMenuOptionsTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:50 AM</span>
+<span class='badge badge-default'>00:00:00:107</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifyMyAccountMenuOptionsTest_20241027095850.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC04_verifyMyAccountMenuOptionsTest_20241027095850.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:50 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyMyAccountHeaderOptionsListTest</p>
+            <p class="text-sm">
+              <span>9:58:50 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyMyAccountHeaderOptionsListTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:50 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:50 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC05_Verify my account header options list Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05_verifyMyAccountHeaderOptionsListTest</p>
+            <p class="text-sm">
+              <span>9:58:52 AM</span> / <span>00:00:00:103</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05_verifyMyAccountHeaderOptionsListTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:52 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:52 AM</span>
+<span class='badge badge-default'>00:00:00:103</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyMyAccountHeaderOptionsListTest_20241027095852.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC05_verifyMyAccountHeaderOptionsListTest_20241027095852.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:52 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC06_verifyMyOrdersHeaderOptionsListTest</p>
+            <p class="text-sm">
+              <span>9:58:52 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC06_verifyMyOrdersHeaderOptionsListTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:52 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:52 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC06_Verify My Orders header options list Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC06_verifyMyOrdersHeaderOptionsListTest</p>
+            <p class="text-sm">
+              <span>9:58:55 AM</span> / <span>00:00:00:106</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC06_verifyMyOrdersHeaderOptionsListTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:55 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:55 AM</span>
+<span class='badge badge-default'>00:00:00:106</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC06_verifyMyOrdersHeaderOptionsListTest_20241027095855.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC06_verifyMyOrdersHeaderOptionsListTest_20241027095855.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:58:55 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:58:55 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:58:55 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:58:55 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC08_Perform the product search Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:59:06 AM</span> / <span>00:00:00:147</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:06 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:06 AM</span>
+<span class='badge badge-default'>00:00:00:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095906.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095906.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:59:06 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:59:06 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:06 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:06 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC08_Perform the product search Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:59:16 AM</span> / <span>00:00:00:143</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:16 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:16 AM</span>
+<span class='badge badge-default'>00:00:00:143</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095916.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095916.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:59:16 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:59:16 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:16 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:16 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC08_Perform the product search Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC08_performProductSearchTest</p>
+            <p class="text-sm">
+              <span>9:59:26 AM</span> / <span>00:00:00:174</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC08_performProductSearchTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:26 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:26 AM</span>
+<span class='badge badge-default'>00:00:00:174</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095926.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC08_performProductSearchTest_20241027095926.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:59:26 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC07_verifyBrokenLinksInMyAccountPageTest</p>
+            <p class="text-sm">
+              <span>9:59:26 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC07_verifyBrokenLinksInMyAccountPageTest</h5>
+<span class='badge badge-success'>10.27.2024 9:59:26 AM</span>
+<span class='badge badge-danger'>10.27.2024 9:59:26 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC07_Verify any broken links in my account page Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC07_verifyBrokenLinksInMyAccountPageTest</p>
+            <p class="text-sm">
+              <span>10:01:47 AM</span> / <span>00:00:00:188</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC07_verifyBrokenLinksInMyAccountPageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:01:47 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:01:47 AM</span>
+<span class='badge badge-default'>00:00:00:188</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC07_verifyBrokenLinksInMyAccountPageTest_20241027100147.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC07_verifyBrokenLinksInMyAccountPageTest_20241027100147.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:01:47 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag="AllTestSuite MyAccountPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC09_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>10:01:47 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC09_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 10:01:47 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:01:47 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">MyAccountPageTest</span></div>
+<div class="m-t-10 m-l-5">TC09_Verify logout from MyAccount Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC09_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>10:01:54 AM</span> / <span>00:00:00:227</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC09_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 10:01:54 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:01:55 AM</span>
+<span class='badge badge-default'>00:00:00:227</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC09_verifyLogoutTest_20241027100154.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC09_verifyLogoutTest_20241027100154.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:01:54 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC09_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>10:02:15 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC09_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 10:02:15 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:02:15 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC03_Verify logout from MyAccount Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC09_verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>10:02:23 AM</span> / <span>00:00:00:214</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC09_verifyLogoutTest</h5>
+<span class='badge badge-success'>10.27.2024 10:02:23 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:02:23 AM</span>
+<span class='badge badge-default'>00:00:00:214</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC09_verifyLogoutTest_20241027100223.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC09_verifyLogoutTest_20241027100223.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:02:23 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:02:23 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:02:23 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:02:23 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify product Image Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:02:44 AM</span> / <span>23:59:59:863</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:02:44 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:02:44 AM</span>
+<span class='badge badge-default'>23:59:59:863</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100244.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100244.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:02:44 AM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:02:44 AM</td>
+        <td>
+          The following asserts failed:
+	expected [Search - Samsung SyncMaster 941BW] but found [Search - Samsung]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:02:44 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:02:44 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:02:44 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify product Image Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:03:05 AM</span> / <span>23:59:59:863</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:05 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:05 AM</span>
+<span class='badge badge-default'>23:59:59:863</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100305.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100305.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:05 AM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:05 AM</td>
+        <td>
+          The following asserts failed:
+	expected [Search - MacBook Air] but found [Search - MacBook]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:03:06 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:06 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:06 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify product Image Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:03:26 AM</span> / <span>23:59:59:819</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:26 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:26 AM</span>
+<span class='badge badge-default'>23:59:59:819</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100326.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100326.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:26 AM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:26 AM</td>
+        <td>
+          The following asserts failed:
+	expected [4] but found [3]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:03:27 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:27 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:27 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC01_Verify product Image Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductImageTest</p>
+            <p class="text-sm">
+              <span>10:03:47 AM</span> / <span>23:59:59:879</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC01_verifyProductImageTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:47 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:47 AM</span>
+<span class='badge badge-default'>23:59:59:879</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100347.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductImageTest_20241027100347.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:47 AM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:03:47 AM</td>
+        <td>
+          The following asserts failed:
+	expected [Search - Apple Cinema 30"] but found [Search - Apple]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="59"
+          author=""
+          tag="AllTestSuite ProductDetailsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductMetadataTest</p>
+            <p class="text-sm">
+              <span>10:03:47 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01_verifyProductMetadataTest</h5>
+<span class='badge badge-success'>10.27.2024 10:03:47 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:03:47 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AllTestSuite</span>
+<span class="badge badge-pill badge-default">ProductDetailsPageTest</span></div>
+<div class="m-t-10 m-l-5">TC02_Verify product metadata Test</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01_verifyProductMetadataTest</p>
+            <p class="text-sm">
+              <span>10:04:08 AM</span> / <span>23:59:59:837</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC01_verifyProductMetadataTest</h5>
+<span class='badge badge-success'>10.27.2024 10:04:08 AM</span>
+<span class='badge badge-danger'>10.27.2024 10:04:08 AM</span>
+<span class='badge badge-default'>23:59:59:837</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductMetadataTest_20241027100408.png' src="C:\KeheInfo\OpenCartHybridFrameworkOct132024\screenshots\TC01_verifyProductMetadataTest_20241027100408.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:04:08 AM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:04:08 AM</td>
+        <td>
+          The following asserts failed:
+	expected [$2,000.00] but found [null]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>30</span>
+</span>
+<p class="name">AllTestSuite</p>
+<p class="duration text-sm">30 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AllTestSuite</h4>
+<span status="pass" class='badge log pass-bg'>30 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TC01_verifyOpenCartPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC02_verifyOpenCartLogoTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>TC03_verifyOpenCartFeaturedSectionCardsCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>TC04_verifynavigateToRegistrationPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>TC05_verifyNavigateToLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>TC01_verifyLoginPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>TC02_verifyLoginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>TC03_verifyLoginPageElementsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>TC04_verifyNavigateToRegistrationPageFromLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>TC05_verifyNavigateToForgotPasswordFromLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>TC06_verifyEmptyCredsLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>TC07_verifyValidCredsLoginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>TC08_verifyLogoutTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>TC01_verifyMyAccountPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>TC02_verifyMyAccountPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>TC03_verifyMyAccountPageElementsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>TC04_verifyMyAccountMenuOptionsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>TC05_verifyMyAccountHeaderOptionsListTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>TC06_verifyMyOrdersHeaderOptionsListTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='41'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='43'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='45'>TC07_verifyBrokenLinksInMyAccountPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:01:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='47' id='47'>TC09_verifyLogoutTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='49'>TC09_verifyLogoutTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='51'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='53'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='55' id='55'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='57'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='59'>TC01_verifyProductMetadataTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+</span>
+<p class="name">MyAccountPageTest</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>MyAccountPageTest</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>TC01_verifyMyAccountPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>TC02_verifyMyAccountPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>TC03_verifyMyAccountPageElementsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>TC04_verifyMyAccountMenuOptionsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>TC05_verifyMyAccountHeaderOptionsListTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>TC06_verifyMyOrdersHeaderOptionsListTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='41'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='43'>TC08_performProductSearchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:59:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='45'>TC07_verifyBrokenLinksInMyAccountPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:01:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='47' id='47'>TC09_verifyLogoutTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">LoginPageTest</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>LoginPageTest</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>TC01_verifyLoginPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>TC02_verifyLoginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>TC03_verifyLoginPageElementsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>TC04_verifyNavigateToRegistrationPageFromLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>TC05_verifyNavigateToForgotPasswordFromLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>TC06_verifyEmptyCredsLoginPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>TC07_verifyValidCredsLoginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:58:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>TC08_verifyLogoutTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">HomePageTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HomePageTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TC01_verifyOpenCartPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC02_verifyOpenCartLogoTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>TC03_verifyOpenCartFeaturedSectionCardsCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>TC04_verifynavigateToRegistrationPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:57:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>TC05_verifyNavigateToLoginPageTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">ProductDetailsPageTest</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ProductDetailsPageTest</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='49'>TC09_verifyLogoutTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='51'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:02:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='53'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='55' id='55'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='57'>TC01_verifyProductImageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:03:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='59'>TC01_verifyProductMetadataTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 27, 2024 09:57:12 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 27, 2024 10:04:09 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>55</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'>
+<b>55</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='8%'><b>5</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'><b>25</b> events passed</small></div>
+<div>
+<small data-tooltip='28%'><b>10</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"TC01_verifyOpenCartPageTitleTest":0.001,"TC01_verifyOpenCartPageTitleTest":0.18,"TC02_verifyOpenCartLogoTest":0,"TC02_verifyOpenCartLogoTest":0.151,"TC03_verifyOpenCartFeaturedSectionCardsCountTest":0,"TC03_verifyOpenCartFeaturedSectionCardsCountTest":0.138,"TC04_verifynavigateToRegistrationPageTest":0,"TC04_verifynavigateToRegistrationPageTest":0.265,"TC05_verifyNavigateToLoginPageTest":0,"TC05_verifyNavigateToLoginPageTest":0.342,"TC01_verifyLoginPageUrlTest":0,"TC01_verifyLoginPageUrlTest":0.145,"TC02_verifyLoginPageTitleTest":0,"TC02_verifyLoginPageTitleTest":0.114,"TC03_verifyLoginPageElementsTest":0,"TC03_verifyLoginPageElementsTest":0.111,"TC04_verifyNavigateToRegistrationPageFromLoginPageTest":0,"TC04_verifyNavigateToRegistrationPageFromLoginPageTest":0.144,"TC05_verifyNavigateToForgotPasswordFromLoginPageTest":0,"TC05_verifyNavigateToForgotPasswordFromLoginPageTest":0.157,"TC06_verifyEmptyCredsLoginPageTest":0,"TC06_verifyEmptyCredsLoginPageTest":0.13,"TC07_verifyValidCredsLoginTest":0,"TC07_verifyValidCredsLoginTest":0.141,"TC08_verifyLogoutTest":0,"TC08_verifyLogoutTest":0.244,"TC01_verifyMyAccountPageUrlTest":0,"TC01_verifyMyAccountPageUrlTest":0.131,"TC02_verifyMyAccountPageTitleTest":0,"TC02_verifyMyAccountPageTitleTest":0.135,"TC03_verifyMyAccountPageElementsTest":0,"TC03_verifyMyAccountPageElementsTest":0.114,"TC04_verifyMyAccountMenuOptionsTest":0,"TC04_verifyMyAccountMenuOptionsTest":0.107,"TC05_verifyMyAccountHeaderOptionsListTest":0,"TC05_verifyMyAccountHeaderOptionsListTest":0.103,"TC06_verifyMyOrdersHeaderOptionsListTest":0,"TC06_verifyMyOrdersHeaderOptionsListTest":0.106,"TC08_performProductSearchTest":0,"TC08_performProductSearchTest":0.147,"TC08_performProductSearchTest":0,"TC08_performProductSearchTest":0.143,"TC08_performProductSearchTest":0,"TC08_performProductSearchTest":0.174,"TC07_verifyBrokenLinksInMyAccountPageTest":0,"TC07_verifyBrokenLinksInMyAccountPageTest":0.188,"TC09_verifyLogoutTest":0,"TC09_verifyLogoutTest":0.227,"TC09_verifyLogoutTest":0,"TC09_verifyLogoutTest":0.214,"TC01_verifyProductImageTest":0,"TC01_verifyProductImageTest":-0.137,"TC01_verifyProductImageTest":0,"TC01_verifyProductImageTest":-0.137,"TC01_verifyProductImageTest":0,"TC01_verifyProductImageTest":-0.181,"TC01_verifyProductImageTest":0,"TC01_verifyProductImageTest":-0.121,"TC01_verifyProductMetadataTest":0,"TC01_verifyProductMetadataTest":-0.163
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>AllTestSuite</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>MyAccountPageTest</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>LoginPageTest</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>HomePageTest</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ProductDetailsPageTest</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Customer Name</td>
+<td>NAL</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>opencart</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>Sub Module</td>
+<td>Customers</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>rames</td>
+</tr>
+<tr>
+<td>Environemnt</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Build#</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>OpenCart QA Team</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 55,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 25,
+failEvents: 10,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
