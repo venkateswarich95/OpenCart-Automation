@@ -36,16 +36,6 @@ public class TestBase {
     public WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(TestBase.class.getName());
 
-  /*public TestBase(WebDriver driver){
-        homePg = new HomePage(driver);
-        regPg = new RegistrationPage(driver);
-        loginPg = new LoginPage(driver);
-        myaccountPg = new MyAccountPage(driver);
-        resultPg = new ResultsPage(driver);
-        productDetailPg = new ProductDetailsPage(driver);
-    }*/
-
-
     @Parameters({"browser"})
     @BeforeClass
     public void commonSetUp(@Optional("chrome") String browser) throws IOException {
