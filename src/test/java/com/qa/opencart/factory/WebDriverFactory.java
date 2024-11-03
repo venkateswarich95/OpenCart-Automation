@@ -41,10 +41,12 @@ public class WebDriverFactory {
         switch (browser){
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
-             //   chromeOptions.addArguments("--incognito");
-             //   chromeOptions.addArguments("disable-infobars");
+                //   chromeOptions.addArguments("--incognito");
+                //   chromeOptions.addArguments("disable-infobars");
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--disable-gpu"); // Optional, improves compatibility
+                chromeOptions.addArguments("--window-size=1920,1080");
                 chromeOptions.setAcceptInsecureCerts(true);
-              //  chromeOptions.addArguments("--headless=new");
                 tlDriver.set(new ChromeDriver(chromeOptions));
                 break;
             case "firefox":
