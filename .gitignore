@@ -11,6 +11,11 @@ target/
 *.iws
 *.iml
 *.ipr
+ allure-results/*
+screenshots/*
+.idea/vcs.xml
+ logs/automation.log
+ .idea/encodings.xml
 
 ### Eclipse ###
 .apt_generated

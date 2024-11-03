@@ -3,13 +3,14 @@ package com.qa.opencart.pages;
 import com.qa.opencart.utilities.WebDriverUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage extends WebDriverUtils{
-   private Logger log =LogManager.getLogger(RegistrationPage.class);
+    private Logger log =LogManager.getLogger(RegistrationPage.class);
 
     public RegistrationPage(WebDriver driver){
         super(driver);
@@ -79,16 +80,65 @@ public class RegistrationPage extends WebDriverUtils{
 
     @FindBy(xpath = "//a[normalize-space()='contact us']")
     private WebElement contactusLink;
+
+    public void clickOnContinueButton(){
+        try{
+            log.info("click on continue button");
+            if(continueBtn.isDisplayed()&&continueBtn.isEnabled())
+                click(continueBtn);
+        }catch(NoSuchElementException ex){
+            log.info("Element not found"+ex.getMessage());
+        }catch(InterruptedException e){
+            throw new RuntimeException(e);
+        }
+    }
+    public void checkAgreeCheckbox(){
+        try{
+            log.info("Select agree checkbox button");
+            if(!privacyPolicyCheckbox.isSelected())
+                click(privacyPolicyCheckbox);
+        }catch(NoSuchElementException ex){
+            log.info("Element not found"+ex.getMessage());
+        }catch(InterruptedException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void selectSubscribe(String option) throws InterruptedException{
+        try{
+            log.info("Select NewsLetter subscription yes or no");
+            if(option.equalsIgnoreCase("Yes")){
+                log.info("Select Yes radio button");
+                click(subscribeYesRadioBtn);
+            }else{
+                log.info("Select No radio button");
+                click(subscribeNoRadioBtn);
+            }
+        }catch(NoSuchElementException ex){
+            log.info("Element not found"+ex.getMessage());
+        }
+    }
     public String getRegisterPageTitle(){
         return getTitle();
     }
 
+    public WebElement getAccountCreatedHeaderElement() throws InterruptedException{
+        return accountCreatedHeader;
+    }
     public String getAccountCreatedHeader() throws InterruptedException{
-       return getText(accountCreatedHeader);
+        return getText(accountCreatedHeader);
     }
 
     public String getAccountCreatedSuccessMsg() throws InterruptedException{
         return getText(accountCreatedSuccMsg);
+    }
+
+    public WebElement getAccountCreatedBreadCrumbSuccessLink(){
+        return accountCreatedBreadCrumbSuccessLink;
+    }
+
+    public WebElement getAccountCreatedSuccMsg(){
+        return accountCreatedSuccMsg;
     }
 
     public boolean isAccountCreatedSuccMsgExist(){
@@ -105,7 +155,7 @@ public class RegistrationPage extends WebDriverUtils{
 
     public void clickOnContactUsLink() throws InterruptedException{
         log.info("click on contactus link");
-               click(contactusLink);
+        click(contactusLink);
     }
 
     public void clickOnLoginPageLink() throws InterruptedException{
